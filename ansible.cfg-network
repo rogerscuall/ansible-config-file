@@ -1,8 +1,12 @@
 [defaults]
+#Deprecation warnings indicate usage of legacy features that are slated for removal in a future release of Ansible.
 deprecation_warnings = False
+#Host key checking
 host_key_checking = False
+#Path to the inventory
 inventory = inventory/network
 gathering = explicit
+#Summary of tasks with time.
 callback_whitelist = profile_tasks
 [paramiko_connection]
 host_key_auto_add = True
